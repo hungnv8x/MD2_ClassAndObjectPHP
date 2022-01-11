@@ -2,8 +2,8 @@
 
 class StopWatch
 {
-private $startTime;
-private $endTime;
+public $startTime;
+public $endTime;
 
     public function __construct()
     {
@@ -27,6 +27,6 @@ private $endTime;
         $this->endTime = microtime();
     }
     public function getElapsedTime() {
-       return $this->stop() - $this->start() ;
+       return $this->getEndTime() - $this->getStartTime() ;
     }
 }

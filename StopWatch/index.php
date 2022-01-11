@@ -1,10 +1,9 @@
 <?php
 include_once "StopWatch.php";
 $watch = new StopWatch();
-echo $watch ->getStartTime();
 function sortArr(){
     $arr =[];
-    for ($i = 0; $i < 10000000 ;$i++){
+    for ($i = 0; $i < 100000 ;$i++){
         $arr[]= rand(100,10000);
     }
     sort($arr);
