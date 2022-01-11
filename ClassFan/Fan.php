@@ -26,29 +26,14 @@ class Fan
         return $this->SLOW;
     }
 
-    public function setSLOW(int $SLOW): void
-    {
-        $this->SLOW = $SLOW;
-    }
-
     public function getMEDIUM(): int
     {
         return $this->MEDIUM;
     }
 
-    public function setMEDIUM(int $MEDIUM): void
-    {
-        $this->MEDIUM = $MEDIUM;
-    }
-
     public function getFAST(): int
     {
         return $this->FAST;
-    }
-
-    public function setFAST(int $FAST): void
-    {
-        $this->FAST = $FAST;
     }
 
     public function getSpeed(): int

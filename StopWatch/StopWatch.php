@@ -7,7 +7,7 @@ private $endTime;
 
     public function __construct()
     {
-        $this->startTime = date("h:i:s",time());;
+        $this->startTime = microtime();
     }
 
     public function getStartTime()
@@ -21,10 +21,10 @@ private $endTime;
     }
 
     public function start(){
-        $this->startTime = date("h:i:s",time());
+        $this->startTime = microtime();
     }
     public function stop(){
-        $this->endTime = date("h:i:s",time());
+        $this->endTime = microtime();
     }
     public function getElapsedTime() {
        return $this->stop() - $this->start() ;
